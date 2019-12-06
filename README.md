@@ -6,7 +6,7 @@ This repository is all about papers and tools of Explainable AI
 - [Surveys](#surveys)
 - [Background](#background)
 - [XAL Methods:](#XAL-Method)
-- [1. Transparent Models](#Transparent-Models)
+- [1. Transparent Models](#Transparent-Model)
 
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
