@@ -17,12 +17,14 @@ This repository is all about papers and tools of Explainable AI
 		- [CNN](#cnn)
 		- [RNN](#rnn)
 
-## surveys
+## Surveys
 
 >*[Towards a rigorous science of interpretable machine learning.](https://arxiv.org/abs/1702.08608) F. Doshi-Velez and B. Kim. (2018).*
+
 >*[Trends and trajectories for explainable, accountable and intelligible systems: An HCI research agenda.]() A. Abdul, J. Vermeulen, D. Wang, B. Y. Lim, and M. Kankanhalli,in Proc. SIGCHI Conf. Hum. FactorsComput. Syst. (CHI), 2018, p. 582*
 	
 	most focus on HCI research
+	
 >*[A survey of methods for explaining black box models.](https://arxiv.org/abs/1802.01933) R. Guidotti, A. Monreale, F. Turini, D. Pedreschi, and F. Giannotti.(2018).*
 
 	presented a detailed taxonomy of explainability methods according to the type of problem faced. 
