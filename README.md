@@ -43,13 +43,19 @@ As long as the model is accurate for the task, and uses a reasonably restricted 
 Including natural language explanations [71], visualizations of learned models [72], and explanations by example [73].
 #### Model Agnostic
 ##### Visualization
-- Saliency Map
+- <span id="saliency">Saliency</span>
+
+- Sensitivity
+	>*[Using sensitivity analysis and visualization techniques to open black box data mining models](https://www.sciencedirect.com/science/article/pii/S0020025512007098), P. Cortez and M. J. Embrechts,Inf. Sci. (2013).*
+	
+	>*[Opening black box data mining models
+using sensitivity analysis](https://core.ac.uk/download/pdf/55616214.pdf), P.Cortez and M.J.Embrechts, in Proc. IEEE Symp.Comput.Intell.Data Mining (CIDM), (2011)*
 - Surrogate Models
 - Partial Dependence Plot (PDP)
 - ndividual Conditional Expectation (ICE)
 ##### Knowledge Extraction
 ##### Feature Relevance Method
-
+- [Saliency](#saliency)
 
 ##### Example-based explanation
 ##### Global interpretability
@@ -71,7 +77,7 @@ Extracts image regions that are highly sensitive to the network output.
 >*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
 #### Model Specific
 ##### CNN
-###### 1. Visualization of filters(CNN representations)
+##### 1. Visualization of filters(CNN representations)
 
 1)Compute gradients of the score of a given CNN unit.
 - Deconvolution
@@ -82,24 +88,21 @@ Extracts image regions that are highly sensitive to the network output.
 
 2. Use Deconv to visualize CNN
 
-	>*Matthew D. Zeiler and Rob Fer-gus. [Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) In ECCV, 2014.*
-	>*Aravindh Mahendran and Andrea Vedaldi. [Understanding deep image representa-tions by inverting them.](https://arxiv.org/abs/1412.0035) In CVPR, 2015.*
+	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
+	
+	>*[Understanding deep image representa-tions by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
 
 - CAM: Class Activation Map
 
 	The CAM highlights the class-specific discriminative regions.
-	>*Zhou, B., Khosla, A., Lapedriza, À., Oliva, A., & Torralba, A. (2015). [Learning Deep Features for Discriminative Localization.](https://arxiv.org/abs/1512.04150) 2016 IEEE (CVPR), 2921-2929.*
+	>*[Learning Deep Features for Discriminative Localization.](https://arxiv.org/abs/1512.04150) Zhou, B., Khosla, A., Lapedriza, À., Oliva, A., & Torralba, A.2016 IEEE (CVPR), 2921-2929.*
 
 	Note:https://medium.com/@ahmdtaha/learning-deep-features-for-discriminative-localization-aa73e32e39b2
 
 	<p align="center"><img width="50%" height="50%" src="images/CAM.jpeg?raw=true" /></p>
 
-	>*R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra, Grad-CAM: Why did you say that? (2016).*
+	>*[Grad-CAM: Why did you say that? ] R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
 
-- Sensitivity
-	>*[Using sensitivity analysis and visualization techniques to open black box data mining models](https://www.sciencedirect.com/science/article/pii/S0020025512007098), P. Cortez and M. J. Embrechts,Inf. Sci. (2013).*
-	>*[Opening black box data mining models
-using sensitivity analysis](https://core.ac.uk/download/pdf/55616214.pdf), P.Cortez and M.J.Embrechts, in Proc. IEEE Symp.Comput.Intell.Data Mining (CIDM), (2011)*
 - Saliency Maps
 	>*[Deep inside convolutional networks: visualising image classification models and saliency maps.](https://arxiv.org/abs/1312.6034) Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. In arXiv:1312.6034, 2013.*
 
