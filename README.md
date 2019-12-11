@@ -52,7 +52,7 @@ Including natural language explanations [71], visualizations of learned models [
 	
 	>*[Real time image saliency for black box classifiers], P. Dabkowski, Y. Gal, in: Advances in Neural Information Processing Systems, 2017, pp. 6967–6976.*
 	
-- Sensitivity
+- <span id="sensitivity">Sensitivity</span>
 
 	Sensitivity refers to how an ANN output is influenced by its input and/or weight perturbations
 
@@ -84,10 +84,16 @@ Including natural language explanations [71], visualizations of learned models [
 	>*[Interpretability via model extraction.](https://arxiv.org/abs/1706.09773) O. Bastani, C. Kim, and H. Bastani. (2017).*
 	
 	>*[TreeView: Peeking into deep neural networks via feature-space partitioning.](https://arxiv.org/abs/1611.07429) J. J. Thiagarajan, B. Kailkhura, P. Sattigeri, and K. N. Ramamurthy.(2016)*
+	
+- Loss Function Vis
+	>*[Visualizing the Loss Landscape of Neural Nets.](https://arxiv.org/abs/1712.09913) NeurIPS.Li, H., Xu, Z., Taylor, G., & Goldstein, T. (2017).*
+	
+	<p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
+	
 #### Feature Relevance/Importance Method
 - [Saliency](#saliency)
 
-- Sensitivity
+- [Sensitivity](#sensitivity)
 
 - Influence functions
 	>*[Understanding black-box predictions via influence functions], P. W. Koh, P. Liang, in: Proceedings of the 34th International Conference on Machine Learning. (2017)*
@@ -112,7 +118,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 
 - <span id="lime">LIME</span>
 	>*[Why should i trust you?: Explaining the predictions of any classifier]() M. T. Ribeiro, S. Singh, and C. Guestrin,in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, 2016,*
-
+	
+	Approximates a DNN’s predictions using sparse linear models where we can easily identify important features.
 	Extracts image regions that are highly sensitive to the network output. 
 - anchor
 
@@ -127,20 +134,12 @@ While local Explaining the reasons for a specific decision or single pre-diction
 #### CNN
 ##### 1. Visualization of filters(CNN representations)
 
-1)Compute gradients of the score of a given CNN unit.
+**1)Compute gradients of the score of a given CNN unit.**
 
-- Deconvolution(2010)
+- Filter Activation
+	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
 
-1. First propose Deconv
-
-	>*M. D. Zeiler, D. Krishnan, G. W. Taylor, R. Fergus, [Deconvolutional networks.](https://ieeexplore.ieee.org/document/5539957)in: CVPR, Vol. 10,2010, p. 7.*
-
-2. Use Deconv to visualize CNN
-
-	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
-	
-	>*[Understanding deep image representations by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
-	
+	computing the correlation between activations of different filters. 
 - Saliency Maps(2013)
 
 	>*[Deep inside convolutional networks: visualising image classification models and saliency maps.](https://arxiv.org/abs/1312.6034) Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. In arXiv:1312.6034, 2013.*
@@ -160,28 +159,56 @@ While local Explaining the reasons for a specific decision or single pre-diction
 
 	>*[Grad-CAM: Why did you say that? ] R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
 
-- Viusalization System: Understanding, Diagnosis, Refinement
+- Deconvolution(2010)
+	Utilize an inversed CNN structure, which is composed deconvolutional and unpooling layers, to find the image pattern in the original input image for a specific neuron activation.
+1. First propose Deconv
 
-	>*[Towards better analysis of deep convolutional neural networks](https://arxiv.org/abs/1604.07043), M. Liu, J. Shi, Z. Li, C. Li, J. Zhu, S. Liu, IEEE transactions on visualization and computer graphics 23 (1) (2016) 91–100.*
+	>*M. D. Zeiler, D. Krishnan, G. W. Taylor, R. Fergus, [Deconvolutional networks.](https://ieeexplore.ieee.org/document/5539957)in: CVPR, Vol. 10,2010, p. 7.*
 
-	<p align="center"><img width="50%" height="50%" src="images/visualization-system.png?raw=true" /></p>
-		
-- Toolbox for visualization CNN
+2. Use Deconv to visualize CNN
 
-	>*[Understanding Neural Networks Through Deep Visualization.](https://arxiv.org/abs/1506.06579) Yosinski, J., Clune, J., Nguyen, A.M., Fuchs, T.J., & Lipson, H. (2015). ArXiv, abs/1506.06579.*
+	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
 	
-2)Invert CNN feature maps to image
+	
+**2)Invert CNN feature maps to image**
 
 - Inversion using CNN
+	Reconstructs an input image based on the original image from a specific layer’s feature maps, which reveals what image information is preserved in that layer
+	>*[Understanding deep image representations by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
+	
+	<p align="center"><img width="50%" height="50%" src="images/invertcnn.jpg?raw=true" /></p>
 	>*[Inverting visual representations with convolutional networks.]( https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
 	
 	>*[Plug & play generative networks: Conditional iterative generation of images in latent space.] Anh Nguyen, Jeff Clune, Yoshua Ben-gio, Alexey Dosovitskiy, and Jason Yosinski. CVPR, 2017.*
 	
 	>*[Object detectors emerge in deep scene cnns. ] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
 
-	compute actual receptive field of filters.
+**3)Viusalization System: Understanding, Diagnosis, Refinement**
+- Visual system
+	>*[Towards better analysis of deep convolutional neural networks](https://arxiv.org/abs/1604.07043), M. Liu, J. Shi, Z. Li, C. Li, J. Zhu, S. Liu, IEEE transactions on visualization and computer graphics 23 (1) (2016) 91–100.*
 
-##### 2. Archtecture Modification
+	<p align="center"><img width="50%" height="50%" src="images/visualization-system.png?raw=true" /></p>
+		
+	>*[An Interactive Node-Link Visualization of Convolutional Neural Networks.](https://link.springer.com/chapter/10.1007/978-3-319-27857-5_77) Harley A.W. (2015) Advances in Visual Computing. ISVC*
+	
+	showing not only what it has learned, but how it behaves given new user-provided input.
+	
+- Toolbox for visualization CNN
+
+	>*[Understanding Neural Networks Through Deep Visualization.](https://arxiv.org/abs/1506.06579) Yosinski, J., Clune, J., Nguyen, A.M., Fuchs, T.J., & Lipson, H. (2015). ArXiv, abs/1506.06579.*
+	
+	<p align="center"><img width="50%" height="50%" src="images/toolbox.jpg?raw=true" /></p>
+	
+	>*[Picasso: A Modular Framework for Visualizing the Learning Process of Neural Network Image Classifiers.](https://medium.com/merantix/picasso-a-free-open-source-visualizer-for-cnns-d8ed3a35cfc5) Henderson, R. & Rothe, R., (2017). Journal of Open Research Software. 5(1), p.22.*
+	
+
+	compute actual receptive field of filters.
+##### 2. Using transparent Model
+- Decision Tree
+
+	>*[Interpreting CNNs via decision trees](https://arxiv.org/abs/1802.00121) , Q. Zhang, Y. Yang, H. Ma, Y. N. Wu, in: IEEE Conference
+on Computer Vision and Pattern Recognition, 2019, pp. 6261–6270.*
+##### 3. Archtecture Modification
 
 - Layer Modification
 	>*[Striving for simplicity: the all convolutional net.] ost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Ried-miller.  ICLR workshop, 2015.*
