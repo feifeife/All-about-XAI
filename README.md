@@ -11,7 +11,7 @@ This repository is all about papers and tools of Explainable AI
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
 		- [visualization](#visualization)
-		- [Feature Relevance/Importance Method](#Feature-Relevance-Importance-Method)
+		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
 		- [Reinforcement learning](#reinforcement-learning)
 		- [Recommend](#recommend)
