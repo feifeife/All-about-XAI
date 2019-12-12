@@ -10,7 +10,7 @@ This repository is all about papers and tools of Explainable AI
 
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
-		- [visualization](#visualization)
+		- [Visualization](#visualization)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
 		- [Reinforcement learning](#reinforcement-learning)
@@ -47,48 +47,48 @@ As long as the model is accurate for the task, and uses a reasonably restricted 
 Including natural language explanations [71], visualizations of learned models [72], and explanations by example [73].
 ### Model Agnostic
 #### Visualization
-- <span id="saliency">Saliency</span>
+##### <span id="saliency">1. Saliency</span>
 	>*[Interpretable explanations of black boxes by meaningful perturbation](), R. C. Fong, A. Vedaldi, in IEEE International Conference on Computer Vision, 2017, pp. 3429–3437.*
 	
 	>*[Real time image saliency for black box classifiers], P. Dabkowski, Y. Gal, in: Advances in Neural Information Processing Systems, 2017, pp. 6967–6976.*
 	
-- <span id="sensitivity">Sensitivity</span>
+##### <span id="sensitivity">2. Sensitivity</span>
+Sensitivity refers to how an ANN output is influenced by its input and/or weight perturbations
 
-	Sensitivity refers to how an ANN output is influenced by its input and/or weight perturbations
+>*[Opening black box data mining models using sensitivity analysis](https://core.ac.uk/download/pdf/55616214.pdf), P.Cortez and M.J.Embrechts, in Proc. IEEE Symp.Comput.Intell.Data Mining (CIDM), (2011)*
+	
+>*[Using sensitivity analysis and visualization techniques to open black box data mining models](https://www.sciencedirect.com/science/article/pii/S0020025512007098), P. Cortez and M. J. Embrechts,Inf. Sci. (2013).*	
 
-	>*[Opening black box data mining models using sensitivity analysis](https://core.ac.uk/download/pdf/55616214.pdf), P.Cortez and M.J.Embrechts, in Proc. IEEE Symp.Comput.Intell.Data Mining (CIDM), (2011)*
-	
-	>*[Using sensitivity analysis and visualization techniques to open black box data mining models](https://www.sciencedirect.com/science/article/pii/S0020025512007098), P. Cortez and M. J. Embrechts,Inf. Sci. (2013).*	
+##### 3. Shapely explanations & Game theory
 
-- Shapely explanations & Game theory
+>*[A unified approach to interpreting model predictions], S.M. Lundberg and S.I. Lee, in Proc. Adv. Neural Inf. Process. Syst., 2017.*
+	
+##### 4. Partial Dependence Plot (PDP)
+	
+>*[Auditing black-box models for indirect influence](), P. Adler, C. Falk, S. A. Friedler, T. Nix, G. Rybeck, C. Scheidegger, B. Smith, S. Venkatasubramanian, Knowledge and Information Systems (2018)*
 
-	>*[A unified approach to interpreting model predictions], S.M. Lundberg and S.I. Lee, in Proc. Adv. Neural Inf. Process. Syst., 2017.*
+##### 5. ICE: Individual Conditional Expectation
 	
-- Partial Dependence Plot (PDP)
-	
-	>*[Auditing black-box models for indirect influence](), P. Adler, C. Falk, S. A. Friedler, T. Nix, G. Rybeck, C. Scheidegger, B. Smith, S. Venkatasubramanian, Knowledge and Information Systems (2018)*
+>*[Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation], A. Goldstein, A. Kapelner, J. Bleich, E. Pitkin, Journal of Computational and Graphical Statistics 24 (1) (2015) 44–65.*
 
-- ICE: Individual Conditional Expectation
-	
-	>*[Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation], A. Goldstein, A. Kapelner, J. Bleich, E. Pitkin, Journal of Computational and Graphical Statistics 24 (1) (2015) 44–65.*
+ICE plots extend PDP, reveal interactions and individual differences by disaggregating the PDP output.
 
-	ICE plots extend PDP, reveal interactions and individual differences by disaggregating the PDP output.
+##### 6. Dependence
+	
+>*[Visualizing the feature importance for black box models], G. Casalicchio, C. Molnar, B. Bischl, Joint European Conference on Machine Learning and Knowledge Discovery in Databases,Springer, 2018, pp. 655–670*
+	
+##### 7. Surrogate Models
 
-- Dependence
+>*[LIME](#lime)*
 	
-	>*[Visualizing the feature importance for black box models], G. Casalicchio, C. Molnar, B. Bischl, Joint European Conference on Machine Learning and Knowledge Discovery in Databases,Springer, 2018, pp. 655–670*
-- Surrogate Models
-
-	>*[LIME](#lime)*
+>*[Interpretability via model extraction.](https://arxiv.org/abs/1706.09773) O. Bastani, C. Kim, and H. Bastani. (2017).*
 	
-	>*[Interpretability via model extraction.](https://arxiv.org/abs/1706.09773) O. Bastani, C. Kim, and H. Bastani. (2017).*
+>*[TreeView: Peeking into deep neural networks via feature-space partitioning.](https://arxiv.org/abs/1611.07429) J. J. Thiagarajan, B. Kailkhura, P. Sattigeri, and K. N. Ramamurthy.(2016)*
 	
-	>*[TreeView: Peeking into deep neural networks via feature-space partitioning.](https://arxiv.org/abs/1611.07429) J. J. Thiagarajan, B. Kailkhura, P. Sattigeri, and K. N. Ramamurthy.(2016)*
+##### 8. Loss Function Vis
+>*[Visualizing the Loss Landscape of Neural Nets.](https://arxiv.org/abs/1712.09913) NeurIPS.Li, H., Xu, Z., Taylor, G., & Goldstein, T. (2017).*
 	
-- Loss Function Vis
-	>*[Visualizing the Loss Landscape of Neural Nets.](https://arxiv.org/abs/1712.09913) NeurIPS.Li, H., Xu, Z., Taylor, G., & Goldstein, T. (2017).*
-	
-	<p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
+<p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
 	
 #### Feature Relevance/Importance Method
 - [Saliency](#saliency)
@@ -108,9 +108,7 @@ Including natural language explanations [71], visualizations of learned models [
 
 - Others
 	>*[Iterative orthogonal feature projection for diagnosing bias in black-box models] J. Adebayo, L. Kagal, (2016). arXiv:1611.04967.*
-#### Example-based explanation
-
-
+	
 #### Local interpretability
 Global is Understanding of the whole logic of a model and follows the entire reasoning leading to all the different possible outcomes.
 
@@ -132,9 +130,9 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	>*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
 ### Model Specific
 #### CNN
-##### 1. Visualization of filters(CNN representations)
+##### 1. Visualization
 
-**1)Compute gradients of the score of a given CNN unit.**
+**1)Max Activation**
 
 - Filter Activation
 	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
@@ -159,6 +157,11 @@ While local Explaining the reasons for a specific decision or single pre-diction
 
 	>*[Grad-CAM: Why did you say that? ] R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
 
+
+	
+	
+**2)Inversion**
+
 - Deconvolution(2010)
 	Utilize an inversed CNN structure, which is composed deconvolutional and unpooling layers, to find the image pattern in the original input image for a specific neuron activation.
 1. First propose Deconv
@@ -169,14 +172,12 @@ While local Explaining the reasons for a specific decision or single pre-diction
 
 	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
 	
-	
-**2)Invert CNN feature maps to image**
-
 - Inversion using CNN
 	Reconstructs an input image based on the original image from a specific layer’s feature maps, which reveals what image information is preserved in that layer
 	>*[Understanding deep image representations by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
 	
 	<p align="center"><img width="50%" height="50%" src="images/invertcnn.jpg?raw=true" /></p>
+	
 	>*[Inverting visual representations with convolutional networks.]( https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
 	
 	>*[Plug & play generative networks: Conditional iterative generation of images in latent space.] Anh Nguyen, Jeff Clune, Yoshua Ben-gio, Alexey Dosovitskiy, and Jason Yosinski. CVPR, 2017.*
@@ -184,6 +185,7 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	>*[Object detectors emerge in deep scene cnns. ] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
 
 **3)Viusalization System: Understanding, Diagnosis, Refinement**
+
 - Visual system
 	>*[Towards better analysis of deep convolutional neural networks](https://arxiv.org/abs/1604.07043), M. Liu, J. Shi, Z. Li, C. Li, J. Zhu, S. Liu, IEEE transactions on visualization and computer graphics 23 (1) (2016) 91–100.*
 
@@ -206,8 +208,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 ##### 2. Using transparent Model
 - Decision Tree
 
-	>*[Interpreting CNNs via decision trees](https://arxiv.org/abs/1802.00121) , Q. Zhang, Y. Yang, H. Ma, Y. N. Wu, in: IEEE Conference
-on Computer Vision and Pattern Recognition, 2019, pp. 6261–6270.*
+	>*[Interpreting CNNs via decision trees](https://arxiv.org/abs/1802.00121) , Q. Zhang, Y. Yang, H. Ma, Y. N. Wu, in: IEEE Conference on Computer Vision and Pattern Recognition, 2019, pp. 6261–6270.*
+
 ##### 3. Archtecture Modification
 
 - Layer Modification
