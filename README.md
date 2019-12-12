@@ -17,6 +17,9 @@ This repository is all about papers and tools of Explainable AI
 		- [Recommend](#recommend)
 	- [Model-Specific](#Model-Specific)
 		- [CNN](#cnn)
+			- [Visualization](#1-visualization)
+			- [Transparent Model](#2-using-explainable-model)
+			- [Model Modification](#3-archtecture-modification)
 		- [RNN](#rnn)
 
 ## Surveys
@@ -130,14 +133,12 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	>*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
 ### Model Specific
 #### CNN
-##### 1. Visualization
+#### 1. Visualization
 
 **1)Max Activation**
 
-- Filter Activation
-	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
+Synthesize input pattern that can cause maximal activation of a neuron
 
-	computing the correlation between activations of different filters. 
 - Saliency Maps(2013)
 
 	>*[Deep inside convolutional networks: visualising image classification models and saliency maps.](https://arxiv.org/abs/1312.6034) Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. In arXiv:1312.6034, 2013.*
@@ -158,12 +159,13 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	>*[Grad-CAM: Why did you say that? ] R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
 
 
-	
-	
-**2)Inversion**
+- Filter Activation
+	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
 
-- Deconvolution(2010)
-	Utilize an inversed CNN structure, which is composed deconvolutional and unpooling layers, to find the image pattern in the original input image for a specific neuron activation.
+	computing the correlation between activations of different filters. 	
+**3)Deconvolution(2010)**
+Finds the selective patterns from the input image that activate a specific neuron in the convolutional layers by projecting the lowdimension neurons'feature maps back to the image dimension
+
 1. First propose Deconv
 
 	>*M. D. Zeiler, D. Krishnan, G. W. Taylor, R. Fergus, [Deconvolutional networks.](https://ieeexplore.ieee.org/document/5539957)in: CVPR, Vol. 10,2010, p. 7.*
@@ -171,13 +173,22 @@ While local Explaining the reasons for a specific decision or single pre-diction
 2. Use Deconv to visualize CNN
 
 	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
-	
-- Inversion using CNN
-	Reconstructs an input image based on the original image from a specific layer’s feature maps, which reveals what image information is preserved in that layer
+
+**2)Inversion**
+Different from the above, which visualize the CNN from a single neuron’s activation, this methods is from Layer-level.
+
+Reconstructs an input image based from a specific layer's feature maps, which reveals what image information is preserved in that layer
+
+- Regularizer-based
+
 	>*[Understanding deep image representations by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
 	
 	<p align="center"><img width="50%" height="50%" src="images/invertcnn.jpg?raw=true" /></p>
 	
+	>*[Visualizing deep convolutional neural networks using natural pre-images](http://dx.doi.org/10.1007/s11263-016-0911-8), A. Mahendran and A. Vedaldi, International Journal of Computer Vision, 120 (2016), 233–255.*
+	
+- Up-conv net
+
 	>*[Inverting visual representations with convolutional networks.]( https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
 	
 	>*[Plug & play generative networks: Conditional iterative generation of images in latent space.] Anh Nguyen, Jeff Clune, Yoshua Ben-gio, Alexey Dosovitskiy, and Jason Yosinski. CVPR, 2017.*
@@ -205,12 +216,12 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	
 
 	compute actual receptive field of filters.
-##### 2. Using transparent Model
+#### 2. Using explainable Model
 - Decision Tree
 
 	>*[Interpreting CNNs via decision trees](https://arxiv.org/abs/1802.00121) , Q. Zhang, Y. Yang, H. Ma, Y. N. Wu, in: IEEE Conference on Computer Vision and Pattern Recognition, 2019, pp. 6261–6270.*
 
-##### 3. Archtecture Modification
+#### 3. Archtecture Modification
 
 - Layer Modification
 	>*[Striving for simplicity: the all convolutional net.] ost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Ried-miller.  ICLR workshop, 2015.*
