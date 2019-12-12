@@ -51,36 +51,40 @@ Including natural language explanations [71], visualizations of learned models [
 ### Model Agnostic
 #### Visualization
 ##### <span id="saliency">1. Saliency</span>
-	>*[Interpretable explanations of black boxes by meaningful perturbation](), R. C. Fong, A. Vedaldi, in IEEE International Conference on Computer Vision, 2017, pp. 3429–3437.*
+
+>*[Interpretable explanations of black boxes by meaningful perturbation](https://arxiv.org/abs/1704.03296), R. C. Fong, A. Vedaldi, in IEEE International Conference on Computer Vision, 2017, pp. 3429–3437.*
 	
-	>*[Real time image saliency for black box classifiers], P. Dabkowski, Y. Gal, in: Advances in Neural Information Processing Systems, 2017, pp. 6967–6976.*
+>*[Real time image saliency for black box classifiers](https://arxiv.org/abs/1705.07857), P. Dabkowski, Y. Gal, in: Advances in Neural Information Processing Systems, 2017, pp. 6967–6976.*
 	
 ##### <span id="sensitivity">2. Sensitivity</span>
+
 Sensitivity refers to how an ANN output is influenced by its input and/or weight perturbations
 
 >*[Opening black box data mining models using sensitivity analysis](https://core.ac.uk/download/pdf/55616214.pdf), P.Cortez and M.J.Embrechts, in Proc. IEEE Symp.Comput.Intell.Data Mining (CIDM), (2011)*
 	
 >*[Using sensitivity analysis and visualization techniques to open black box data mining models](https://www.sciencedirect.com/science/article/pii/S0020025512007098), P. Cortez and M. J. Embrechts,Inf. Sci. (2013).*	
 
-##### 3. Shapely explanations & Game theory
+##### 3. SHAP: SHapley Additive exPlanations
 
->*[A unified approach to interpreting model predictions], S.M. Lundberg and S.I. Lee, in Proc. Adv. Neural Inf. Process. Syst., 2017.*
+Assign importance values for each feature, for a given prediction based on the game theoretic concept of Shapley values
+
+>*[A unified approach to interpreting model predictions](https://arxiv.org/abs/1705.07874), S.M. Lundberg and S.I. Lee, in Proc. Adv. Neural Inf. Process. Syst., 2017.*
 	
 ##### 4. Partial Dependence Plot (PDP)
-	
->*[Auditing black-box models for indirect influence](), P. Adler, C. Falk, S. A. Friedler, T. Nix, G. Rybeck, C. Scheidegger, B. Smith, S. Venkatasubramanian, Knowledge and Information Systems (2018)*
+- PDP
+>*[Auditing black-box models for indirect influence](https://arxiv.org/abs/1602.07043), P. Adler, C. Falk, S. A. Friedler, T. Nix, G. Rybeck, C. Scheidegger, B. Smith, S. Venkatasubramanian, Knowledge and Information Systems (2018)*
 
-##### 5. ICE: Individual Conditional Expectation
+- ICE: Individual Conditional Expectation(extends PDP)
 	
->*[Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation], A. Goldstein, A. Kapelner, J. Bleich, E. Pitkin, Journal of Computational and Graphical Statistics 24 (1) (2015) 44–65.*
+>*[Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation](https://arxiv.org/abs/1309.6392), A. Goldstein, A. Kapelner, J. Bleich, E. Pitkin, Journal of Computational and Graphical Statistics 24 (1) (2015) 44–65.*
 
 ICE plots extend PDP, reveal interactions and individual differences by disaggregating the PDP output.
 
-##### 6. Dependence
-	
+- PI & ICI
+
 >*[Visualizing the feature importance for black box models], G. Casalicchio, C. Molnar, B. Bischl, Joint European Conference on Machine Learning and Knowledge Discovery in Databases,Springer, 2018, pp. 655–670*
 	
-##### 7. Surrogate Models
+##### 5. Surrogate Models
 
 >*[LIME](#lime)*
 	
@@ -88,7 +92,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 	
 >*[TreeView: Peeking into deep neural networks via feature-space partitioning.](https://arxiv.org/abs/1611.07429) J. J. Thiagarajan, B. Kailkhura, P. Sattigeri, and K. N. Ramamurthy.(2016)*
 	
-##### 8. Loss Function Vis
+##### 6. Loss Function Vis
 >*[Visualizing the Loss Landscape of Neural Nets.](https://arxiv.org/abs/1712.09913) NeurIPS.Li, H., Xu, Z., Taylor, G., & Goldstein, T. (2017).*
 	
 <p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
@@ -98,15 +102,16 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 
 - [Sensitivity](#sensitivity)
 
-- Influence functions
-	>*[Understanding black-box predictions via influence functions], P. W. Koh, P. Liang, in: Proceedings of the 34th International Conference on Machine Learning. (2017)*
+- [Partial Dependence Plot](#Partial-Dependence-Plot)
 
-- Game theory
-	>*[An efficient explanation of individual classifications using game theory.]I. Kononenko et al.Journal of Machine Learning Research, 11(Jan):1–18, 2010.*
+- Influence functions
+
+	>*[Understanding black-box predictions via influence functions], P. W. Koh, P. Liang, in: Proceedings of the 34th International Conference on Machine Learning. (2017)*
 
 - Interacticon based
 
 	>*GoldenEye: [A peek into the black box: exploring classifiers by randomization], A. Henelius, K. Puolamaki, H. Bostrom, L. Asker, P. Papapetrou, Data mining and knowledge discovery (2014)*
+	
 	>*[Interpreting classifiers through attribute interactions in datasets] A. Henelius, K. Puolamaki, A. Ukkonen, (2017).arXiv:1707.07576.*
 
 - Others
@@ -122,15 +127,14 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	
 	Approximates a DNN’s predictions using sparse linear models where we can easily identify important features.
 	Extracts image regions that are highly sensitive to the network output. 
-- anchor
 
-	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
 - LOCO
 
 	>*[Distribution-free predictive inference for regression](http://www.stat.cmu.edu/~ryantibs/papers/conformal.pdf) J. Lei, M. G’Sell, A. Rinaldo, R. J. Tibshirani, and L.Wasserman.*
 - LRP
-
 	>*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
+- anchor
+	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
 ### Model Specific
 #### CNN
 #### 1. Visualization
