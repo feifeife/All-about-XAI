@@ -135,7 +135,7 @@ While local Explaining the reasons for a specific decision or single pre-diction
 #### CNN
 #### 1. Visualization
 
-**1)Max Activation**
+**(1) Max Activation**
 
 Synthesize input pattern that can cause maximal activation of a neuron
 
@@ -163,7 +163,8 @@ Synthesize input pattern that can cause maximal activation of a neuron
 	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
 
 	computing the correlation between activations of different filters. 	
-**3)Deconvolution(2010)**
+**(2) Deconvolution(2010)**
+
 Finds the selective patterns from the input image that activate a specific neuron in the convolutional layers by projecting the lowdimension neurons'feature maps back to the image dimension
 
 1. First propose Deconv
@@ -174,7 +175,8 @@ Finds the selective patterns from the input image that activate a specific neuro
 
 	>*[Visualizing and understanding convolutional net-works.](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) Matthew D. Zeiler and Rob Fer-gus. In ECCV, 2014.*
 
-**2)Inversion**
+**(3) Inversion**
+
 Different from the above, which visualize the CNN from a single neuron’s activation, this methods is from Layer-level.
 
 Reconstructs an input image based from a specific layer's feature maps, which reveals what image information is preserved in that layer
@@ -195,7 +197,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 	>*[Object detectors emerge in deep scene cnns. ] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
 
-**3)Viusalization System: Understanding, Diagnosis, Refinement**
+**(4) Viusalization System: Understanding, Diagnosis, Refinement**
 
 - Visual system
 	>*[Towards better analysis of deep convolutional neural networks](https://arxiv.org/abs/1604.07043), M. Liu, J. Shi, Z. Li, C. Li, J. Zhu, S. Liu, IEEE transactions on visualization and computer graphics 23 (1) (2016) 91–100.*
