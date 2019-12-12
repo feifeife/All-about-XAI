@@ -236,9 +236,17 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 #### RNN
 - Visualization
-
+	
 	>*[Visualizing and understanding recurrent networks]A. Karpathy, J. Johnson, L. Fei-Fei, (2015).arXiv:1506.02078.*
 - Feature Relevence
 
 	>*[Explaining recurrent neural network predictions in sentiment analysis ](https://arxiv.org/abs/1706.07206)L. Arras, G. Montavon, K.-R. Muller, W. Samek, (2017). arXiv:1706.07206.*
+- Seq2Seq
+	>*[Seq2seq-Vis: A Visual Debugging Tool for Sequence-to-Sequence Models.](https://arxiv.org/abs/1804.09299) Strobelt, H., Gehrmann, S., Behrisch, M., Perer, A., Pfister, H., & Rush, A.M. (2018). IEEE Transactions on Visualization and Computer Graphics, 25, 353-363.*
+- Attention
+	>*[Visualizing Attention in Transformer-Based Language models.](https://arxiv.org/abs/1904.02679)Vig, J. (2019).*
+	>*[Deep Features Analysis with Attention Networks.](https://arxiv.org/abs/1901.10042) Xie, S., Chen, D., Zhang, R., & Xue, H. (2019).  ArXiv, abs/1901.10042.*
+
+- Bert
+	>*[Visualizing and Measuring the Geometry of BERT.](https://arxiv.org/pdf/1906.02715.pdf) Coenen, A., Reif, E., Yuan, A., Kim, B., Pearce, A., Viégas, F.B., & Wattenberg, M. (2019). NeurlIPS, abs/1906.02715.*
 
