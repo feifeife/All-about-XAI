@@ -14,7 +14,6 @@ This repository is all about papers and tools of Explainable AI
 		- [Visualization](#visualization)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
-		- [Reinforcement learning](#reinforcement-learning)
 		- [Recommend](#recommend)
 	- [Model-Specific](#Model-Specific)
 		- [Tree-based](#tree-based-model)
@@ -23,6 +22,7 @@ This repository is all about papers and tools of Explainable AI
 			- [Transparent Model](#2-using-explainable-model)
 			- [Model Modification](#3-archtecture-modification)
 		- [RNN](#rnn)
+		- [Reinforcement learning](#reinforcement-learning)
 
 ## Surveys
 >*[Visual Interpretability for Deep Learning: a Survey](https://arxiv.org/abs/1802.00614) Quanshi Zhang, Song-Chun Zhu (2018) CVPR*
@@ -248,7 +248,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 	Using dimensionality reduction for: 1.visualizing the relationships between learned representations of observations, and 2. visualizing the relationships between artificial neurons.
 	
-	<p align="center"><img width="50%" height="50%" src="images/hiddenactivity.png?raw=true" /></p>
+	<p align="center"><img width="50%" height="50%" src="images/hiddenacitivity.png?raw=true" /></p>
 	
 	>*[Picasso: A Modular Framework for Visualizing the Learning Process of Neural Network Image Classifiers.](https://medium.com/merantix/picasso-a-free-open-source-visualizer-for-cnns-d8ed3a35cfc5) Henderson, R. & Rothe, R., (2017). Journal of Open Research Software. 5(1), p.22.*
 	
