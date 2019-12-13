@@ -4,6 +4,7 @@ This repository is all about papers and tools of Explainable AI
 ## Contents
 
 - [Surveys](#surveys)
+- [Visualization Systems/Tools](#Visualization-SystemsTools)
 - [Background](#background)
 - [XAL Methods:](#XAL-Method)
 - [1. Transparent Models](#Transparent-Model)
@@ -16,6 +17,7 @@ This repository is all about papers and tools of Explainable AI
 		- [Reinforcement learning](#reinforcement-learning)
 		- [Recommend](#recommend)
 	- [Model-Specific](#Model-Specific)
+		- [Tree-based](#tree-based-model)
 		- [CNN](#cnn)
 			- [Visualization](#1-visualization)
 			- [Transparent Model](#2-using-explainable-model)
@@ -39,15 +41,30 @@ presented a detailed taxonomy of explainability methods according to the type of
 >*[Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://ieeexplore.ieee.org/document/8466590) A. Adadi and M. Berrada,in IEEE Access, vol. 6, pp. 52138-52160, 2018.*
 	
 >*[Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI](https://arxiv.org/abs/1910.10045)Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez.arxiv.(2019)*
+## Visualization Systems/Tools
+- explAIner
+	>*[explAIner: A Visual Analytics Framework for Interactive and Explainable Machine Learning](https://arxiv.org/abs/1908.00087), Spinner, T., Schlegel, U., Schäfer, H., & El-Assady, M. (2019).  IEEE VAST, Transactions on Visualization and Computer Graphics, 26, 1064-1074.*
+	
+- CSI: collaborative semantic inference
+	>*[Visual Interaction with Deep Learning Models through Collaborative Semantic Inference.](https://arxiv.org/abs/1907.10739) Gehrmann, S., Strobelt, H., Krüger, R., Pfister, H., & Rush, A.M. (2019). IEEE VAST. Transactions on Visualization and Computer Graphics, 26, 884-894.*
+	
+	User can both understand and control parts of the model reasoning process. eg. in text summarization system, user can  collaborative writing a summary with machines suggestion.
+- Manifold
+	>*[Manifold: A Model-Agnostic Framework for Interpretation and Diagnosis of Machine Learning Models.](https://arxiv.org/abs/1808.00196)Zhang, J., Wang, Y., Molino, P., Li, L., & Ebert, D.S. (2019). IEEE VAST, Transactions on Visualization and Computer Graphics, 25, 364-373.*
+	
+	inspection (hypothesis), explanation (reasoning), and refinement (verification)
+	
+	<p align="center"><img width="50%" height="50%" src="images/manifold.png?raw=true" /></p>
+	
 ## XAI Method
 ## Transparent Model
-As long as the model is accurate for the task, and uses a reasonably restricted number of internal components, intrinsic interpretable models are suffcient. Otherwise, use post-hoc methods。
+As long as the model is accurate for the task, and uses a reasonably restricted number of internal components, intrinsic interpretable models are suffcient. Otherwise, use post-hoc methods.
 ### Decision Trees
 ### General Additive Models
 ### Bayesian Models
 
 ## Post-Hoc Explainability
-Including natural language explanations [71], visualizations of learned models [72], and explanations by example [73].
+Including natural language explanations, visualizations of learned models , and explanations by example.
 ### Model Agnostic
 #### Visualization
 ##### <span id="saliency">1. Saliency</span>
@@ -135,7 +152,16 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	>*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
 - anchor
 	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
+	
 ### Model Specific
+#### Tree-based Model
+- random forest
+	>*[iForest: Interpreting Random Forests via Visual Analytics](https://ieeexplore.ieee.org/document/8454906) Xun Zhao, Yanhong Wu, Dik Lun Lee, and Weiwei Cui. IEEE VIS 2018*
+
+	Summarize the decision paths in random forests.
+	
+	<p align="center"><img width="50%" height="50%" src="images/iForest-system.png?raw=true" /></p>
+
 #### CNN
 #### 1. Visualization
 
@@ -213,10 +239,16 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	showing not only what it has learned, but how it behaves given new user-provided input.
 	
 - Toolbox for visualization CNN
-
+	
 	>*[Understanding Neural Networks Through Deep Visualization.](https://arxiv.org/abs/1506.06579) Yosinski, J., Clune, J., Nguyen, A.M., Fuchs, T.J., & Lipson, H. (2015). ArXiv, abs/1506.06579.*
 	
 	<p align="center"><img width="50%" height="50%" src="images/toolbox.jpg?raw=true" /></p>
+	
+	>*[Visualizing the Hidden Activity of Artificial Neural Networks.](https://ieeexplore.ieee.org/document/7539329)Rauber, P.E., Fadel, S.G., Falcão, A.X., & Telea, A. (2017). IEEE Transactions on Visualization and Computer Graphics, 23, 101-110.*
+	
+	Using dimensionality reduction for: 1.visualizing the relationships between learned representations of observations, and 2. visualizing the relationships between artificial neurons.
+	
+	<p align="center"><img width="50%" height="50%" src="images/hiddenactivity.png?raw=true" /></p>
 	
 	>*[Picasso: A Modular Framework for Visualizing the Learning Process of Neural Network Image Classifiers.](https://medium.com/merantix/picasso-a-free-open-source-visualizer-for-cnns-d8ed3a35cfc5) Henderson, R. & Rothe, R., (2017). Journal of Open Research Software. 5(1), p.22.*
 	
@@ -250,3 +282,12 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 - Bert
 	>*[Visualizing and Measuring the Geometry of BERT.](https://arxiv.org/pdf/1906.02715.pdf) Coenen, A., Reif, E., Yuan, A., Kim, B., Pearce, A., Viégas, F.B., & Wattenberg, M. (2019). NeurlIPS, abs/1906.02715.*
 
+#### Reinforcement Learning
+- DQNViz
+	>*[DQNViz: A Visual Analytics Approach to Understand Deep Q-Networks.](https://ieeexplore.ieee.org/document/8454905) Wang, J., Gou, L., Shen, H., & Yang, H.T. (2018). IEEE VAST, Transactions on Visualization and Computer Graphics(honorable mention), 25, 288-298.*
+	
+	Extract useful action/reward patterns that help to interpret the model and control the training
+	
+	<p align="center"><img width="50%" height="50%" src="images/dqn.png?raw=true" /></p>
+	
+	
