@@ -40,7 +40,9 @@ presented a detailed taxonomy of explainability methods according to the type of
 
 >*[Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://ieeexplore.ieee.org/document/8466590) A. Adadi and M. Berrada,in IEEE Access, vol. 6, pp. 52138-52160, 2018.*
 	
->*[Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI](https://arxiv.org/abs/1910.10045)Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez.arxiv.(2019)*
+>*[Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI](https://arxiv.org/abs/1910.10045) Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez.arxiv.(2019)*
+>*[How convolutional neural network see the world - A survey of convolutional neural network visualization methods.](https://arxiv.org/abs/1804.11191) Qin, Z., Yu, F., Liu, C., & Chen, X. (2018).  ArXiv, abs/1804.11191.*
+
 ## Visualization Systems/Tools
 - explAIner
 	>*[explAIner: A Visual Analytics Framework for Interactive and Explainable Machine Learning](https://arxiv.org/abs/1908.00087), Spinner, T., Schlegel, U., Schäfer, H., & El-Assady, M. (2019).  IEEE VAST, Transactions on Visualization and Computer Graphics, 26, 1064-1074.*
