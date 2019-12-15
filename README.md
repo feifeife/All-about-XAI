@@ -14,7 +14,6 @@ This repository is all about papers and tools of Explainable AI
 		- [Visualization](#visualization)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
-		- [Recommend](#recommend)
 	- [Model-Specific](#Model-Specific)
 		- [Tree-based](#tree-based-model)
 		- [CNN](#cnn)
@@ -41,6 +40,7 @@ presented a detailed taxonomy of explainability methods according to the type of
 >*[Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://ieeexplore.ieee.org/document/8466590) A. Adadi and M. Berrada,in IEEE Access, vol. 6, pp. 52138-52160, 2018.*
 	
 >*[Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI](https://arxiv.org/abs/1910.10045) Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez.arxiv.(2019)*
+
 >*[How convolutional neural network see the world - A survey of convolutional neural network visualization methods.](https://arxiv.org/abs/1804.11191) Qin, Z., Yu, F., Liu, C., & Chen, X. (2018).  ArXiv, abs/1804.11191.*
 
 ## Visualization Systems/Tools
@@ -285,6 +285,25 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	>*[Visualizing and Measuring the Geometry of BERT.](https://arxiv.org/pdf/1906.02715.pdf) Coenen, A., Reif, E., Yuan, A., Kim, B., Pearce, A., Viégas, F.B., & Wattenberg, M. (2019). NeurlIPS, abs/1906.02715.*
 
 #### Reinforcement Learning
+- t-SNE
+	>*[Graying the black box: Understanding DQNs.](https://arxiv.org/pdf/1602.02658.pdf) Zahavy, T., Baram, N., and Mannor, S. International Conference on Machine Learning, pp. 1899–1908, 2016.*
+	
+	using SAMDPs to analyze high-level policy behavior
+- Saliency maps
+	>*[Visualizing and Understanding Atari Agents.](https://arxiv.org/abs/1711.00138) Greydanus, S., Koul, A., Dodge, J., & Fern, A. (2017).  ICML, abs/1711.00138.*
+
+	how inputs influence individual decisions using saliency maps
+	
+	<p align="center"><img width="50%" height="50%" src="images/atari.png?raw=true" /></p>
+	
+- Entropy
+	>*[Establishing appropriate trust via critical states.] S. H. Huang, K. Bhatia, P. Abbeel, and A. D. Dragan.International Conference on Intelligent Robots (IROS), 2018*
+
+	finds critical states of an agent based on the entropy of the output of a policy. 
+- AM
+	>*[Finding and Visualizing Weaknesses of Deep Reinforcement Learning Agents. ](https://arxiv.org/abs/1904.01318v1) Rupprecht, C., Ibrahim, C., & Pal, C.J. (2019). ArXiv, abs/1904.01318.*
+
+ 	using activation maximization methods for visualization.
 - DQNViz
 	>*[DQNViz: A Visual Analytics Approach to Understand Deep Q-Networks.](https://ieeexplore.ieee.org/document/8454905) Wang, J., Gou, L., Shen, H., & Yang, H.T. (2018). IEEE VAST, Transactions on Visualization and Computer Graphics(honorable mention), 25, 288-298.*
 	
