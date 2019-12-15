@@ -24,6 +24,8 @@ This repository is all about papers and tools of Explainable AI
 		- [Reinforcement learning](#reinforcement-learning)
 
 ## Surveys
+>*[Towards better analysis of machine learning models: A visual analytics perspective.](https://arxiv.org/abs/1810.08174)Liu, S., Wang, X., Liu, M., & Zhu, J. (2017). Visual Informatics, 1, 48-56.*
+
 >*[Visual Interpretability for Deep Learning: a Survey](https://arxiv.org/abs/1802.00614) Quanshi Zhang, Song-Chun Zhu (2018) CVPR*
 	
 interpretable/disentangled middle-layer representations
@@ -57,6 +59,15 @@ presented a detailed taxonomy of explainability methods according to the type of
 	inspection (hypothesis), explanation (reasoning), and refinement (verification)
 	
 	<p align="center"><img width="50%" height="50%" src="images/manifold.png?raw=true" /></p>
+- DeepVID
+	>*[DeepVID: Deep Visual Interpretation and Diagnosis for Image Classifiers via Knowledge Distillation. ](https://junpengw.bitbucket.io/image/research/pvis19.pdf) Wang, J., Gou, L., Zhang, W., Yang, H.T., & Shen, H. (2019). IEEE Transactions on Visualization and Computer Graphics, 25, 2168-2180.*
+	
+- ActiVis
+	>*[Activis: Visual exploration of industry-scale deep neural network models.](https://arxiv.org/abs/1704.01942) M. Kahng, P. Y. Andrews, A. Kalro, and D. H. P. Chau. IEEE transactions on visualization and computer graphics, 24(1):88–97, 2018* Facebook
+	
+	unify instance- and subset-level inspections of neuron activations
+	
+	<p align="center"><img width="50%" height="50%" src="images/activis.png?raw=true" /></p>
 	
 ## XAI Method
 ## Transparent Model
@@ -116,7 +127,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 	
 <p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
 	
-#### Feature Relevance/Importance Method
+#### 7. Feature Relevance/Importance Method
 - [Saliency](#saliency)
 
 - [Sensitivity](#sensitivity)
@@ -135,6 +146,9 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 
 - Others
 	>*[Iterative orthogonal feature projection for diagnosing bias in black-box models] J. Adebayo, L. Kagal, (2016). arXiv:1611.04967.*
+
+#### 8. Model Distillation
+
 	
 #### Local interpretability
 Global is Understanding of the whole logic of a model and follows the entire reasoning leading to all the different possible outcomes.
@@ -231,7 +245,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 
 **(4) Viusalization System: Understanding, Diagnosis, Refinement**
 
-- Visual system
+- CNNVis
 	>*[Towards better analysis of deep convolutional neural networks](https://arxiv.org/abs/1604.07043), M. Liu, J. Shi, Z. Li, C. Li, J. Zhu, S. Liu, IEEE transactions on visualization and computer graphics 23 (1) (2016) 91–100.*
 
 	<p align="center"><img width="50%" height="50%" src="images/visualization-system.png?raw=true" /></p>
@@ -239,6 +253,19 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	>*[An Interactive Node-Link Visualization of Convolutional Neural Networks.](https://link.springer.com/chapter/10.1007/978-3-319-27857-5_77) Harley A.W. (2015) Advances in Visual Computing. ISVC*
 	
 	showing not only what it has learned, but how it behaves given new user-provided input.
+- Block
+	>*[Do convolutional neural networks learn class hierarchy? ](https://arxiv.org/abs/1710.06501) A. Bilal, A. Jourabloo, M. Ye, X. Liu, and L. Ren. IEEE transactions on visualization and computer graphics, 24(1):152–162, 2018.*
+
+	Including a class hierarchy and confusion matrix showing misclassified samples only, bands indicate the selected classes in both dimensions and a sample viewer
+	
+	<p align="center"><img width="50%" height="50%" src="images/block.png?raw=true" /></p>
+	
+- DeepEyes
+	>*[A. DeepEyes: Progressive Visual Analytics for Designing Deep Neural Networks. ](https://graphics.tudelft.nl/Publications-new/2018/PHVLEV18/paper216.pdf) Pezzotti, N., Höllt, T., van Gemert, J., Lelieveldt, B. P., Eisemann, E., & Vilanova, VAST 2017.*
+	
+	Identification of stable layers, degenerated filters,patterns undetected, oversized layers, unnecessary layers or the need of additional layers
+	
+	<p align="center"><img width="50%" height="50%" src="images/deepeyes.png?raw=true" /></p>
 	
 - Toolbox for visualization CNN
 	
@@ -271,19 +298,40 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 #### RNN
 - Visualization
 	
-	>*[Visualizing and understanding recurrent networks]A. Karpathy, J. Johnson, L. Fei-Fei, (2015).arXiv:1506.02078.*
+	>*[Visualizing and understanding recurrent networks](https://arxiv.org/abs/1506.02078) A. Karpathy, J. Johnson, L. Fei-Fei, (2015).arXiv:1506.02078.*
 - Feature Relevence
 
 	>*[Explaining recurrent neural network predictions in sentiment analysis ](https://arxiv.org/abs/1706.07206)L. Arras, G. Montavon, K.-R. Muller, W. Samek, (2017). arXiv:1706.07206.*
+- RNNVis
+	>*[Understanding hidden memories of recurrent neural networks. ](https://arxiv.org/abs/1710.10777) Y. Ming, S. Cao, R. Zhang, Z. Li, Y. Chen, Y. Song, and H. Qu. In Visual Analytics Science and Technology (VAST), 2017 IEEE Conference on.IEEE, 2017.*
+- LISA
+	>*[LISA: Explaining Recurrent Neural Network Judgments via Layer-wIse Semantic Accumulation and Example to Pattern Transformation.](https://arxiv.org/abs/1808.01591) Gupta, P., & Schütze, H. (2018). BlackboxNLP@EMNLP.*
+
+-LSTMVis
+	>*[Lstmvis: A tool for visual analysis of hidden state dynamics in recurrent neural networks.](https://arxiv.org/abs/1606.07461) H. Strobelt, S. Gehrmann, H. Pfister, and A. M. Rush. IEEE transactions on visualization and computer graphics, 24(1):667–676,2018.*
+	
 - Seq2Seq
 	>*[Seq2seq-Vis: A Visual Debugging Tool for Sequence-to-Sequence Models.](https://arxiv.org/abs/1804.09299) Strobelt, H., Gehrmann, S., Behrisch, M., Perer, A., Pfister, H., & Rush, A.M. (2018). IEEE Transactions on Visualization and Computer Graphics, 25, 353-363.*
+
 - Attention
 	>*[Visualizing Attention in Transformer-Based Language models.](https://arxiv.org/abs/1904.02679)Vig, J. (2019).*
+	
 	>*[Deep Features Analysis with Attention Networks.](https://arxiv.org/abs/1901.10042) Xie, S., Chen, D., Zhang, R., & Xue, H. (2019).  ArXiv, abs/1901.10042.*
-
+- Self-Attention
+	>*[SANVis: Visual Analytics for Understanding Self-Attention Networks. ](https://arxiv.org/abs/1909.09595) Park, C., Na, I., Jo, Y., Shin, S., Yoo, J., Kwon, B.C., Zhao, J., Noh, H., Lee, Y., & Choo, J. (2019). ArXiv, abs/1909.09595.*
 - Bert
 	>*[Visualizing and Measuring the Geometry of BERT.](https://arxiv.org/pdf/1906.02715.pdf) Coenen, A., Reif, E., Yuan, A., Kim, B., Pearce, A., Viégas, F.B., & Wattenberg, M. (2019). NeurlIPS, abs/1906.02715.*
 
+#### Generative Model
+- GANViz
+	>*[GANViz: A Visual Analytics Approach to Understand the Adversarial Game. ](https://junpengw.bitbucket.io/image/research/pvis18.pdf) Wang, J., Gou, L., Yang, H.T., & Shen, H. (2018). IEEE Transactions on Visualization and Computer Graphics, 24, 1905-1917.*
+- DGTracker
+	>*[Analyzing the training processes of deep generative models.](http://cgcad.thss.tsinghua.edu.cn/mengchen/publications/dgmtracker/paper.pdf) M. Liu, J. Shi, K. Cao, J. Zhu, and S. Liu. IEEE transactions on visualization and computer graphics, 24(1):77–87, 2018.*
+	
+	<p align="center"><img width="50%" height="50%" src="images/dgtracker.png?raw=true" /></p>
+	
+- GAN Lab
+	>*[GAN Lab: Understanding Complex Deep Generative Models using Interactive Visual Experimentation. ](https://arxiv.org/abs/1809.01587)Kahng, M., Thorat, N., Chau, D.H., Viégas, F.B., & Wattenberg, M. (2018). IEEE Transactions on Visualization and Computer Graphics, 25, 310-320.*
 #### Reinforcement Learning
 - t-SNE
 	>*[Graying the black box: Understanding DQNs.](https://arxiv.org/pdf/1602.02658.pdf) Zahavy, T., Baram, N., and Mannor, S. International Conference on Machine Learning, pp. 1899–1908, 2016.*
@@ -297,7 +345,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	<p align="center"><img width="50%" height="50%" src="images/atari.png?raw=true" /></p>
 	
 - Entropy
-	>*[Establishing appropriate trust via critical states.] S. H. Huang, K. Bhatia, P. Abbeel, and A. D. Dragan.International Conference on Intelligent Robots (IROS), 2018*
+	>*[Establishing appropriate trust via critical states.](https://arxiv.org/abs/1810.08174) S. H. Huang, K. Bhatia, P. Abbeel, and A. D. Dragan.International Conference on Intelligent Robots (IROS), 2018*
 
 	finds critical states of an agent based on the entropy of the output of a policy. 
 - AM
