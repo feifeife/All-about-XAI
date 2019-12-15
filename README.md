@@ -12,8 +12,10 @@ This repository is all about papers and tools of Explainable AI
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
 		- [Visualization](#visualization)
+		- [Model Distillation](#model-distillation)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
+		
 	- [Model-Specific](#Model-Specific)
 		- [Tree-based](#tree-based-model)
 		- [CNN](#cnn)
@@ -59,13 +61,12 @@ presented a detailed taxonomy of explainability methods according to the type of
 	inspection (hypothesis), explanation (reasoning), and refinement (verification)
 	
 	<p align="center"><img width="50%" height="50%" src="images/manifold.png?raw=true" /></p>
-- DeepVID
-	>*[DeepVID: Deep Visual Interpretation and Diagnosis for Image Classifiers via Knowledge Distillation. ](https://junpengw.bitbucket.io/image/research/pvis19.pdf) Wang, J., Gou, L., Zhang, W., Yang, H.T., & Shen, H. (2019). IEEE Transactions on Visualization and Computer Graphics, 25, 2168-2180.*
+
 	
 - ActiVis
 	>*[Activis: Visual exploration of industry-scale deep neural network models.](https://arxiv.org/abs/1704.01942) M. Kahng, P. Y. Andrews, A. Kalro, and D. H. P. Chau. IEEE transactions on visualization and computer graphics, 24(1):88–97, 2018* Facebook
 	
-	unify instance- and subset-level inspections of neuron activations
+	compares the activations from different data instances (i.e., examples) to investigate the potential causes of misclassifications.
 	
 	<p align="center"><img width="50%" height="50%" src="images/activis.png?raw=true" /></p>
 	
@@ -126,8 +127,25 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 >*[Visualizing the Loss Landscape of Neural Nets.](https://arxiv.org/abs/1712.09913) NeurIPS.Li, H., Xu, Z., Taylor, G., & Goldstein, T. (2017).*
 	
 <p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
+
+#### Model Distillation
+- Interpretable Mimic Learning
+	>*[Distilling knowledge from deep networks with applications to healthcare domain.](https://arxiv.org/abs/1512.03542) Z. Che, S. Purushotham, R. Khemani, and Y. Liu. (2015).*
+- DarkSight
+	>*[Interpreting deep classifier by visual distillation of dark knowledge.](https://arxiv.org/abs/1803.04042) K. Xu, D. H. Park, D. H. Yi, and C. Sutton. (2018).*
+- DeepVID
+	>*[DeepVID: Deep Visual Interpretation and Diagnosis for Image Classifiers via Knowledge Distillation.](https://junpengw.bitbucket.io/image/research/pvis19.pdf) Wang, J., Gou, L., Zhang, W., Yang, H.T., & Shen, H. (2019). IEEE Transactions on Visualization and Computer Graphics, 25, 2168-2180.*
+#### Adverserial Attack
+
+>*[Adversarial examples: Attacks and defenses for deep learning.](https://arxiv.org/abs/1712.07107) X. Yuan, P. He, Q. Zhu, and X. Li. (2017).*
+- AEVis
+	>*[Analyzing the Noise Robustness of Deep Neural Networks. ](https://arxiv.org/abs/1810.03913) M. Liu, S. Liu, H. Su, K. Cao, and J. Zhu. In Proceedings of the IEEE Conference on Visual Analytics Science and Technology, 2018.*
+
+	visualizes data-paths along the hidden layers in order to interpret the prediction process of adversarial examples.
 	
-#### 7. Feature Relevance/Importance Method
+	>*[Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics. ](https://arxiv.org/abs/1907.07296) Ma, Y., Xie, T., Li, J., & Maciejewski, R. (2019). IEEE Transactions on Visualization and Computer Graphics, 26, 1075-1085.*
+
+#### Feature Relevance/Importance Method
 - [Saliency](#saliency)
 
 - [Sensitivity](#sensitivity)
@@ -147,7 +165,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 - Others
 	>*[Iterative orthogonal feature projection for diagnosing bias in black-box models] J. Adebayo, L. Kagal, (2016). arXiv:1611.04967.*
 
-#### 8. Model Distillation
+
 
 	
 #### Local interpretability
@@ -171,6 +189,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	
 ### Model Specific
 #### Tree-based Model
+- BoostVis
+	>*[Visual diagnosis of tree boosting methods.] S. Liu, J. Xiao, J. Liu, X. Wang, J. Wu, and J. Zhu. IEEE Transactions on Visualization and Computer Graphics, 24(1):163–173, 2017.*
 - random forest
 	>*[iForest: Interpreting Random Forests via Visual Analytics](https://ieeexplore.ieee.org/document/8454906) Xun Zhao, Yanhong Wu, Dik Lun Lee, and Weiwei Cui. IEEE VIS 2018*
 
