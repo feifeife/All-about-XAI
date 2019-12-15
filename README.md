@@ -307,7 +307,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 - LISA
 	>*[LISA: Explaining Recurrent Neural Network Judgments via Layer-wIse Semantic Accumulation and Example to Pattern Transformation.](https://arxiv.org/abs/1808.01591) Gupta, P., & Schütze, H. (2018). BlackboxNLP@EMNLP.*
 
--LSTMVis
+- LSTMVis
 	>*[Lstmvis: A tool for visual analysis of hidden state dynamics in recurrent neural networks.](https://arxiv.org/abs/1606.07461) H. Strobelt, S. Gehrmann, H. Pfister, and A. M. Rush. IEEE transactions on visualization and computer graphics, 24(1):667–676,2018.*
 	
 - Seq2Seq
