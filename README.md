@@ -11,19 +11,19 @@ This repository is all about papers and tools of Explainable AI
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
 		- [Visualization](#visualization)
-		- [Model Distillation](#model-distillation)
-		- [Adverserial Attack](#adverserial-attack)
+		- [Model Distillation](#Model-Distillation)
+		- [Adverserial Attack](#Adverserial-Attack)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
 		- [Local interpretability](#Local-interpretability)
 		
 	- [Model-Specific](#Model-Specific)
-		- [Tree-based](#tree-based-model)
+		- [Tree-based](#Tree-based-Model)
 		- [CNN](#cnn)
 			- [Visualization](#1-visualization)
-			- [Transparent Model](#2-using-explainable-model)
-			- [Model Modification](#3-archtecture-modification)
+			- [Transparent Model](#2-Using-explainable-Model)
+			- [Model Modification](#3-Archtecture-Modification)
 		- [RNN](#rnn)
-		- [Reinforcement learning](#reinforcement-learning)
+		- [Reinforcement learning](#Reinforcement-Learning)
 
 ## <span id="surveys">Surveys</span>
 >*[Towards better analysis of machine learning models: A visual analytics perspective.](https://arxiv.org/abs/1810.08174)Liu, S., Wang, X., Liu, M., & Zhu, J. (2017). Visual Informatics, 1, 48-56.*
