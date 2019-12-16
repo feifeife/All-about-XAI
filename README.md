@@ -23,6 +23,7 @@ This repository is all about papers and tools of Explainable AI
 			- [Transparent Model](#2-Using-explainable-Model)
 			- [Model Modification](#3-Archtecture-Modification)
 		- [RNN](#rnn)
+		- [Generative Model](#Generative-Model)
 		- [Reinforcement learning](#Reinforcement-Learning)
 
 ## <span id="surveys">Surveys</span>
