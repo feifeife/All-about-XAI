@@ -192,7 +192,7 @@ While local Explaining the reasons for a specific decision or single pre-diction
 ### Model Specific
 #### Tree-based Model
 - BoostVis
-	>*[Visual diagnosis of tree boosting methods.] S. Liu, J. Xiao, J. Liu, X. Wang, J. Wu, and J. Zhu. IEEE Transactions on Visualization and Computer Graphics, 24(1):163–173, 2017.*
+	>*[Visual diagnosis of tree boosting methods.](https://ieeexplore.ieee.org/document/8017582) S. Liu, J. Xiao, J. Liu, X. Wang, J. Wu, and J. Zhu. IEEE Transactions on Visualization and Computer Graphics, 24(1):163–173, 2017.*
 - random forest
 	>*[iForest: Interpreting Random Forests via Visual Analytics](https://ieeexplore.ieee.org/document/8454906) Xun Zhao, Yanhong Wu, Dik Lun Lee, and Weiwei Cui. IEEE VIS 2018*
 
@@ -224,7 +224,7 @@ Synthesize input pattern that can cause maximal activation of **a neuron**
 
 	<p align="center"><img width="50%" height="50%" src="images/CAM.jpeg?raw=true" /></p>
 
-	>*[Grad-CAM: Why did you say that? ] R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
+	>*[Grad-CAM: Why did you say that? ](https://arxiv.org/abs/1611.07450) R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, D. Batra,(2016).*
 
 
 - Filter Activation
@@ -238,7 +238,7 @@ Finds the selective patterns from the input image that activate a specific neuro
 
 1. First propose Deconv
 
-	>*M. D. Zeiler, D. Krishnan, G. W. Taylor, R. Fergus, [Deconvolutional networks.](https://ieeexplore.ieee.org/document/5539957)in: CVPR, Vol. 10,2010, p. 7.*
+	>*[Deconvolutional networks.](https://ieeexplore.ieee.org/document/5539957) M. D. Zeiler, D. Krishnan, G. W. Taylor, R. Fergus, in: CVPR, Vol. 10,2010, p. 7.*
 
 2. Use Deconv to visualize CNN
 
@@ -250,7 +250,7 @@ Different from the above, which visualize the CNN from a single neuron’s activ
 
 Reconstructs an input image based from a specific layer's feature maps, which reveals what image information is preserved in that layer
 
-- Regularizer-based
+- Optimisation method
 
 	>*[Understanding deep image representations by inverting them.](https://arxiv.org/abs/1412.0035) Aravindh Mahendran and Andrea Vedaldi. In CVPR, 2015.*
 	
@@ -259,10 +259,14 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	>*[Visualizing deep convolutional neural networks using natural pre-images](http://dx.doi.org/10.1007/s11263-016-0911-8), A. Mahendran and A. Vedaldi, International Journal of Computer Vision, 120 (2016), 233–255.*
 	
 	
-- Up-conv net
+- Up-conv net based
 
 	>*[Inverting visual representations with convolutional networks.](https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
-	>*[Object detectors emerge in deep scene cnns. ] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
+	
+	Train convolutional networks to reconstruct input images from different feature representations
+	>*[Object detectors emerge in deep scene cnns.](https://arxiv.org/abs/1412.6856) Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
+	
+	Reconstruct the minimal image representation that can be classified as the same category as the original image.
 	
 - Generative model
 	>*[Synthesizing the preferred inputs for neurons in neural networks via deep generator networks. ](https://arxiv.org/abs/1605.09304) Nguyen, A., Dosovitskiy, A., Yosinski, J., Brox, T., Clune, J.In: Advances in Neural Information Processing Systems, pp. 3387–3395 (2016)*
@@ -318,10 +322,16 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 
 #### 3. Archtecture Modification
 
-- Layer Modification
-	>*[Striving for simplicity: the all convolutional net.] ost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Ried-miller.  ICLR workshop, 2015.*
+- All-conv net
+	>*[Striving for simplicity: the all convolutional net.](https://arxiv.org/abs/1412.6806) ost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Ried-miller.  ICLR workshop, 2015.*
 
 	Objext Detection:replace maxpooling layer with all conv-layers
+	
+- NIN
+	>*[Network In Network.](https://arxiv.org/abs/1312.4400) Lin, M., Chen, Q., & Yan, S. (2013).  CoRR, abs/1312.4400.*
+
+- LRCN
+	>*[Long-term recurrent convolutional networks for visual recognition and description. ](https://arxiv.org/abs/1411.4389) Donahue, J., Hendricks, L.A., Guadarrama, S., Rohrbach, M., Venugopalan, S., Saenko, K., & Darrell, T. (2014). IEEE Transactions on Pattern Analysis and Machine Intelligence, 39, 677-691.*
 	
 #### RNN
 - Visualization
