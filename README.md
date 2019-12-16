@@ -5,8 +5,7 @@ This repository is all about papers and tools of Explainable AI
 
 - [Surveys](#surveys)
 - [Visualization Systems/Tools](#Visualization-SystemsTools)
-- [Background](#background)
-- [XAL Methods:](#XAL-Method)
+- [XAI Methods:](#XAI-Method)
 - [1. Transparent Models](#Transparent-Model)
 
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
@@ -26,7 +25,7 @@ This repository is all about papers and tools of Explainable AI
 		- [RNN](#rnn)
 		- [Reinforcement learning](#reinforcement-learning)
 
-## Surveys
+## <span id="surveys">Surveys</span>
 >*[Towards better analysis of machine learning models: A visual analytics perspective.](https://arxiv.org/abs/1810.08174)Liu, S., Wang, X., Liu, M., & Zhu, J. (2017). Visual Informatics, 1, 48-56.*
 
 >*[Visual Interpretability for Deep Learning: a Survey](https://arxiv.org/abs/1802.00614) Quanshi Zhang, Song-Chun Zhu (2018) CVPR*
@@ -48,7 +47,7 @@ presented a detailed taxonomy of explainability methods according to the type of
 
 >*[How convolutional neural network see the world - A survey of convolutional neural network visualization methods.](https://arxiv.org/abs/1804.11191) Qin, Z., Yu, F., Liu, C., & Chen, X. (2018).  ArXiv, abs/1804.11191.*
 
-## Visualization Systems/Tools
+## <span id="Visualization-SystemsTools">Visualization Systems/Tools</span>
 - explAIner
 	>*[explAIner: A Visual Analytics Framework for Interactive and Explainable Machine Learning](https://arxiv.org/abs/1908.00087), Spinner, T., Schlegel, U., Schäfer, H., & El-Assady, M. (2019).  IEEE VAST, Transactions on Visualization and Computer Graphics, 26, 1064-1074.*
 	
@@ -71,17 +70,17 @@ presented a detailed taxonomy of explainability methods according to the type of
 	
 	<p align="center"><img width="50%" height="50%" src="images/activis.png?raw=true" /></p>
 	
-## XAI Method
-## Transparent Model
+## <span id ="XAI-method">XAI Method</span>
+## <span id="Transparent-Model">Transparent Model<span>
 As long as the model is accurate for the task, and uses a reasonably restricted number of internal components, intrinsic interpretable models are suffcient. Otherwise, use post-hoc methods.
 ### Decision Trees
 ### General Additive Models
 ### Bayesian Models
 
-## Post-Hoc Explainability
+## <span id ="Post-Hoc-Explainability">Post-Hoc Explainability</span>
 Including natural language explanations, visualizations of learned models , and explanations by example.
-### Model Agnostic
-#### Visualization
+### <span id="Model-Agnostic">Model Agnostic</span>
+#### <span id ="visualization">Visualization</span>
 ##### <span id="saliency">1. Saliency</span>
 
 >*[Interpretable explanations of black boxes by meaningful perturbation](https://arxiv.org/abs/1704.03296), R. C. Fong, A. Vedaldi, in IEEE International Conference on Computer Vision, 2017, pp. 3429–3437.*
@@ -129,14 +128,14 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 	
 <p align="center"><img width="50%" height="50%" src="images/loss-landscape.png?raw=true" /></p>
 
-#### Model Distillation
+#### <span id="Model-Distillation">Model Distillation</span>
 - Interpretable Mimic Learning
 	>*[Distilling knowledge from deep networks with applications to healthcare domain.](https://arxiv.org/abs/1512.03542) Z. Che, S. Purushotham, R. Khemani, and Y. Liu. (2015).*
 - DarkSight
 	>*[Interpreting deep classifier by visual distillation of dark knowledge.](https://arxiv.org/abs/1803.04042) K. Xu, D. H. Park, D. H. Yi, and C. Sutton. (2018).*
 - DeepVID
 	>*[DeepVID: Deep Visual Interpretation and Diagnosis for Image Classifiers via Knowledge Distillation.](https://junpengw.bitbucket.io/image/research/pvis19.pdf) Wang, J., Gou, L., Zhang, W., Yang, H.T., & Shen, H. (2019). IEEE Transactions on Visualization and Computer Graphics, 25, 2168-2180.*
-#### Adverserial Attack
+#### <span id="Adverserial-Attack">Adverserial Attack</span>
 
 >*[Adversarial examples: Attacks and defenses for deep learning.](https://arxiv.org/abs/1712.07107) X. Yuan, P. He, Q. Zhu, and X. Li. (2017).*
 - AEVis
@@ -146,7 +145,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 	
 	>*[Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics. ](https://arxiv.org/abs/1907.07296) Ma, Y., Xie, T., Li, J., & Maciejewski, R. (2019). IEEE Transactions on Visualization and Computer Graphics, 26, 1075-1085.*
 
-#### Feature Relevance/Importance Method
+#### <span id="Feature-RelevanceImportance-Method">Feature Relevance/Importance Method</span>
 - [Saliency](#saliency)
 
 - [Sensitivity](#sensitivity)
@@ -169,7 +168,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 
 
 	
-#### Local interpretability
+#### <span id="Local-interpretability">Local interpretability</span>
 Global is Understanding of the whole logic of a model and follows the entire reasoning leading to all the different possible outcomes.
 
 While local Explaining the reasons for a specific decision or single pre-diction
@@ -189,8 +188,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 - anchor
 	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
 	
-### Model Specific
-#### Tree-based Model
+### <span id="Model-Specific">Model Specific</span>
+#### <span id="Tree-based-Model">Tree-based Model</span>
 - BoostVis
 	>*[Visual diagnosis of tree boosting methods.](https://ieeexplore.ieee.org/document/8017582) S. Liu, J. Xiao, J. Liu, X. Wang, J. Wu, and J. Zhu. IEEE Transactions on Visualization and Computer Graphics, 24(1):163–173, 2017.*
 - random forest
@@ -200,8 +199,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 	
 	<p align="center"><img width="50%" height="50%" src="images/iForest-system.png?raw=true" /></p>
 
-#### CNN
-#### 1. Visualization
+#### <span id="cnn">CNN</span>
+#### <span id="1-visualization">1. Visualization</span>
 
 **(1) Max Activation**
 
@@ -315,12 +314,12 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 
 	compute actual receptive field of filters.
-#### 2. Using explainable Model
+#### <span id="2-Using-explainable-Model">2. Using explainable Model</span>
 - Decision Tree
 
 	>*[Interpreting CNNs via decision trees](https://arxiv.org/abs/1802.00121) , Q. Zhang, Y. Yang, H. Ma, Y. N. Wu, in: IEEE Conference on Computer Vision and Pattern Recognition, 2019, pp. 6261–6270.*
 
-#### 3. Archtecture Modification
+#### <span id="3-Archtecture-Modification">3. Archtecture Modification</span>
 
 - All-conv net
 	>*[Striving for simplicity: the all convolutional net.](https://arxiv.org/abs/1412.6806) ost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Ried-miller.  ICLR workshop, 2015.*
@@ -333,7 +332,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 - LRCN
 	>*[Long-term recurrent convolutional networks for visual recognition and description. ](https://arxiv.org/abs/1411.4389) Donahue, J., Hendricks, L.A., Guadarrama, S., Rohrbach, M., Venugopalan, S., Saenko, K., & Darrell, T. (2014). IEEE Transactions on Pattern Analysis and Machine Intelligence, 39, 677-691.*
 	
-#### RNN
+#### <span id="rnn">RNN</span>
 - Visualization
 	
 	>*[Visualizing and understanding recurrent networks](https://arxiv.org/abs/1506.02078) A. Karpathy, J. Johnson, L. Fei-Fei, (2015).arXiv:1506.02078.*
@@ -360,7 +359,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 - Bert
 	>*[Visualizing and Measuring the Geometry of BERT.](https://arxiv.org/pdf/1906.02715.pdf) Coenen, A., Reif, E., Yuan, A., Kim, B., Pearce, A., Viégas, F.B., & Wattenberg, M. (2019). NeurlIPS, abs/1906.02715.*
 
-#### Generative Model
+#### <span id="Generative-Model">Generative Model</span>
 - GANViz
 	>*[GANViz: A Visual Analytics Approach to Understand the Adversarial Game. ](https://junpengw.bitbucket.io/image/research/pvis18.pdf) Wang, J., Gou, L., Yang, H.T., & Shen, H. (2018). IEEE Transactions on Visualization and Computer Graphics, 24, 1905-1917.*
 - DGTracker
@@ -370,7 +369,7 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 - GAN Lab
 	>*[GAN Lab: Understanding Complex Deep Generative Models using Interactive Visual Experimentation. ](https://arxiv.org/abs/1809.01587)Kahng, M., Thorat, N., Chau, D.H., Viégas, F.B., & Wattenberg, M. (2018). IEEE Transactions on Visualization and Computer Graphics, 25, 310-320.*
-#### Reinforcement Learning
+#### <span id="Reinforcement-Learning">Reinforcement Learning</span>
 - t-SNE
 	>*[Graying the black box: Understanding DQNs.](https://arxiv.org/pdf/1602.02658.pdf) Zahavy, T., Baram, N., and Mannor, S. International Conference on Machine Learning, pp. 1899–1908, 2016.*
 	
