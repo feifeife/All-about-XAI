@@ -175,16 +175,17 @@ Global is Understanding of the whole logic of a model and follows the entire rea
 While local Explaining the reasons for a specific decision or single pre-diction
 
 - <span id="lime">LIME</span>
-	>*[Why should i trust you?: Explaining the predictions of any classifier]() M. T. Ribeiro, S. Singh, and C. Guestrin,in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, 2016,*
+	>*[Why should i trust you?: Explaining the predictions of any classifier](https://arxiv.org/abs/1602.04938) M. T. Ribeiro, S. Singh, and C. Guestrin,in Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, 2016,*
 	
 	Approximates a DNN’s predictions using sparse linear models where we can easily identify important features.
 	Extracts image regions that are highly sensitive to the network output. 
 
+- LRP: Layer-Wise Relevance Propagation
+	>*[On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4498753/) S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
+	
 - LOCO
-
 	>*[Distribution-free predictive inference for regression](http://www.stat.cmu.edu/~ryantibs/papers/conformal.pdf) J. Lei, M. G’Sell, A. Rinaldo, R. J. Tibshirani, and L.Wasserman.*
-- LRP
-	>*On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, and W. Samek, PLoS ONE, 2015.*
+
 - anchor
 	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
 	
@@ -204,13 +205,13 @@ While local Explaining the reasons for a specific decision or single pre-diction
 
 **(1) Max Activation**
 
-Synthesize input pattern that can cause maximal activation of a neuron
+Synthesize input pattern that can cause maximal activation of **a neuron**
 
 - Saliency Maps(2013)
 
 	>*[Deep inside convolutional networks: visualising image classification models and saliency maps.](https://arxiv.org/abs/1312.6034) Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. In arXiv:1312.6034, 2013.*
 
-	Saliency maps are usually rendered as a heatmap, where hotness corresponds to regions that have a big impact on the model’s final decision
+	Saliency maps are usually rendered as a heatmap, where hotness corresponds to regions that have a big impact on the model’s final decision based on gradient.
 
 	<p align="center"><img width="50%" height="50%" src="images/saliency-map.png?raw=true" /></p>
 	
@@ -219,7 +220,7 @@ Synthesize input pattern that can cause maximal activation of a neuron
 	The CAM highlights the class-specific discriminative regions.
 	>*[Learning Deep Features for Discriminative Localization.](https://arxiv.org/abs/1512.04150) Zhou, B., Khosla, A., Lapedriza, À., Oliva, A., & Torralba, A.2016 IEEE (CVPR), 2921-2929.*
 
-	Note:https://medium.com/@ahmdtaha/learning-deep-features-for-discriminative-localization-aa73e32e39b2
+	Note: https://medium.com/@ahmdtaha/learning-deep-features-for-discriminative-localization-aa73e32e39b2
 
 	<p align="center"><img width="50%" height="50%" src="images/CAM.jpeg?raw=true" /></p>
 
@@ -229,7 +230,8 @@ Synthesize input pattern that can cause maximal activation of a neuron
 - Filter Activation
 	>*[Convergent learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543), Y. Li, J. Yosinski, J. Clune, H. Lipson, J. E. Hopcroft, in: ICLR, 2016.*
 
-	computing the correlation between activations of different filters. 	
+	computing the correlation between activations of different filters.
+	
 **(2) Deconvolution(2010)**
 
 Finds the selective patterns from the input image that activate a specific neuron in the convolutional layers by projecting the lowdimension neurons'feature maps back to the image dimension
@@ -256,13 +258,18 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 	>*[Visualizing deep convolutional neural networks using natural pre-images](http://dx.doi.org/10.1007/s11263-016-0911-8), A. Mahendran and A. Vedaldi, International Journal of Computer Vision, 120 (2016), 233–255.*
 	
+	
 - Up-conv net
 
-	>*[Inverting visual representations with convolutional networks.]( https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
-	
-	>*[Plug & play generative networks: Conditional iterative generation of images in latent space.] Anh Nguyen, Jeff Clune, Yoshua Ben-gio, Alexey Dosovitskiy, and Jason Yosinski. CVPR, 2017.*
-	
+	>*[Inverting visual representations with convolutional networks.](https://arxiv.org/abs/1506.02753) Alexey Dosovitskiy and Thomas Brox. In CVPR, 2016.*
 	>*[Object detectors emerge in deep scene cnns. ] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. In ICRL, 2015.*
+	
+- Generative model
+	>*[Synthesizing the preferred inputs for neurons in neural networks via deep generator networks. ](https://arxiv.org/abs/1605.09304) Nguyen, A., Dosovitskiy, A., Yosinski, J., Brox, T., Clune, J.In: Advances in Neural Information Processing Systems, pp. 3387–3395 (2016)*
+	
+	>*[Plug & play generative networks: Conditional iterative generation of images in latent space.](https://arxiv.org/abs/1612.00005) Anh Nguyen, Jeff Clune, Yoshua Ben-gio, Alexey Dosovitskiy, and Jason Yosinski. CVPR, 2017.*
+	
+
 
 **(4) Viusalization System: Understanding, Diagnosis, Refinement**
 
