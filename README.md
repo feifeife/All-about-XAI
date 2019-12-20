@@ -10,7 +10,7 @@ This repository is all about papers and tools of Explainable AI
 
 - [2. Post-Hoc Explainability](#Post-Hoc-Explainability)
 	- [Model-Agnostic](#Model-Agnostic)
-		- [Visualization](#visualization)
+		- [Visualization Method](#visualization)
 		- [Model Distillation](#Model-Distillation)
 		- [Adverserial Attack](#Adverserial-Attack)
 		- [Feature Relevance/Importance Method](#Feature-RelevanceImportance-Method)
@@ -20,7 +20,7 @@ This repository is all about papers and tools of Explainable AI
 		- [Tree-based](#Tree-based-Model)
 		- [CNN](#cnn)
 			- [Visualization](#1-visualization)
-			- [Transparent Model](#2-Using-explainable-Model)
+			- [Explainable Model](#2-Using-explainable-Model)
 			- [Model Modification](#3-Archtecture-Modification)
 		- [RNN](#rnn)
 		- [Generative Model](#Generative-Model)
@@ -81,7 +81,7 @@ As long as the model is accurate for the task, and uses a reasonably restricted 
 ## <span id ="Post-Hoc-Explainability">Post-Hoc Explainability</span>
 Including natural language explanations, visualizations of learned models , and explanations by example.
 ### <span id="Model-Agnostic">Model Agnostic</span>
-#### <span id ="visualization">Visualization</span>
+#### <span id ="visualization">Visualization Method</span>
 ##### <span id="saliency">1. Saliency</span>
 
 >*[Interpretable explanations of black boxes by meaningful perturbation](https://arxiv.org/abs/1704.03296), R. C. Fong, A. Vedaldi, in IEEE International Conference on Computer Vision, 2017, pp. 3429–3437.*
@@ -114,7 +114,7 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 
 - PI & ICI
 
->*[Visualizing the feature importance for black box models], G. Casalicchio, C. Molnar, B. Bischl, Joint European Conference on Machine Learning and Knowledge Discovery in Databases,Springer, 2018, pp. 655–670*
+>*[Visualizing the feature importance for black box models](https://arxiv.org/abs/1804.06620), G. Casalicchio, C. Molnar, B. Bischl, Joint European Conference on Machine Learning and Knowledge Discovery in Databases,Springer, 2018, pp. 655–670*
 	
 ##### 5. Surrogate Models
 
@@ -155,16 +155,16 @@ ICE plots extend PDP, reveal interactions and individual differences by disaggre
 
 - Influence functions
 
-	>*[Understanding black-box predictions via influence functions], P. W. Koh, P. Liang, in: Proceedings of the 34th International Conference on Machine Learning. (2017)*
+	>*[Understanding black-box predictions via influence functions](https://arxiv.org/abs/1703.04730), P. W. Koh, P. Liang, in: Proceedings of the 34th International Conference on Machine Learning. (2017)*
 
 - Interacticon based
 
-	>*GoldenEye: [A peek into the black box: exploring classifiers by randomization], A. Henelius, K. Puolamaki, H. Bostrom, L. Asker, P. Papapetrou, Data mining and knowledge discovery (2014)*
+	>*GoldenEye: [A peek into the black box: exploring classifiers by randomization](https://link.springer.com/article/10.1007/s10618-014-0368-8), A. Henelius, K. Puolamaki, H. Bostrom, L. Asker, P. Papapetrou, Data mining and knowledge discovery (2014)*
 	
-	>*[Interpreting classifiers through attribute interactions in datasets] A. Henelius, K. Puolamaki, A. Ukkonen, (2017).arXiv:1707.07576.*
+	>*[Interpreting classifiers through attribute interactions in datasets](https://arxiv.org/abs/1707.07576) A. Henelius, K. Puolamaki, A. Ukkonen, (2017).arXiv:1707.07576.*
 
 - Others
-	>*[Iterative orthogonal feature projection for diagnosing bias in black-box models] J. Adebayo, L. Kagal, (2016). arXiv:1611.04967.*
+	>*[Iterative orthogonal feature projection for diagnosing bias in black-box models](https://arxiv.org/abs/1611.04967) J. Adebayo, L. Kagal, (2016). arXiv:1611.04967.*
 
 
 
@@ -186,8 +186,8 @@ While local Explaining the reasons for a specific decision or single pre-diction
 - LOCO
 	>*[Distribution-free predictive inference for regression](http://www.stat.cmu.edu/~ryantibs/papers/conformal.pdf) J. Lei, M. G’Sell, A. Rinaldo, R. J. Tibshirani, and L.Wasserman.*
 
-- anchor
-	>*[Anchors: High-precision model-agnostic explanations]() M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
+- Anchor
+	>*[Anchors: High-precision model-agnostic explanations](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16982) M. T. Ribeiro, S. Singh, and C. Guestrin, in Proc. AAAI Conf. Artif. Intell., 2018.*
 	
 ### <span id="Model-Specific">Model Specific</span>
 #### <span id="Tree-based-Model">Tree-based Model</span>
@@ -307,7 +307,11 @@ Reconstructs an input image based from a specific layer's feature maps, which re
 	
 	>*[Visualizing the Hidden Activity of Artificial Neural Networks.](https://ieeexplore.ieee.org/document/7539329)Rauber, P.E., Fadel, S.G., Falcão, A.X., & Telea, A. (2017). IEEE Transactions on Visualization and Computer Graphics, 23, 101-110.*
 	
-	Using dimensionality reduction for: 1.visualizing the relationships between learned representations of observations, and 2. visualizing the relationships between artificial neurons.
+	Using dimensionality reduction for: 
+	
+	1.visualizing the relationships between learned representations of observations
+	
+	2. visualizing the relationships between artificial neurons.
 	
 	<p align="center"><img width="50%" height="50%" src="images/hiddenacitivity.png?raw=true" /></p>
 	
